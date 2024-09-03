@@ -12,8 +12,6 @@ import matplotlib.pyplot as plt
 x = float(input("Key in the value for x: "))
 y = float(input("Key in the value for y: "))
 
-eps = 10**-7
-
 ## Conditions requested by question
 if x > 0 and y > 0: 
     print("The point lies on the quadrant 1")
