@@ -7,11 +7,6 @@
 ## Write a program that receives the amount of money that the user has inserted into the machine, the choice of drink 
 ## and outputs the drink choice as well as the change
 
-## Example: 
-##  $2.00 and button C is pressed  
-##  "Dispensing Milo..."
-##  "Change of $1.00 dispensed" 
-
 ## Get user input 
 amount = float(input("Enter the amount received from user: "))
 choice = str(input("Enter the choice of drink (A-D): "))
