@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 x = float(input("Key in the value for x: "))
 y = float(input("Key in the value for y: "))
 
+eps = 10**-7
 
 ## Conditions requested by question
 if x > 0 and y > 0: 
@@ -26,7 +27,7 @@ elif x < 0 and y < 0:
 elif x > 0 and y < 0: 
     print("The point lies on the quadrant 4")
 
-elif x == 0 and y == 0: 
+elif (x == 0) and (y == 0): 
     print("Point is on the origin")
 
 elif x == 0: 
@@ -35,8 +36,7 @@ elif x == 0:
 elif y == 0: 
     print("The point lies on the x-axis")
 
-maximum = max(x,y)
-minimum = min(x,y)
+
 
 ## Plot to show (not required for question, used as visual aid)
 plt.figure(figsize=(5,5))
@@ -44,9 +44,10 @@ plt.plot(x, y, 'ro')  # 'ro' means red color, round points
 plt.title(f'Point ({x}, {y})')
 plt.axhline(0, color='black', linewidth=1)  # x-axis
 plt.axvline(0, color='black', linewidth=1)  # y-axis
-plt.xlim(-100,100)
-plt.ylim(-100,100)
+plt.xlim(-(2*x),(2*x))
+plt.ylim(-(2*y),(2*y))
 plt.xlabel('x')
 plt.ylabel('y')
 plt.grid(True)
 plt.show()
+
