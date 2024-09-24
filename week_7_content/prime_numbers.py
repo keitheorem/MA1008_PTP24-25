@@ -10,6 +10,11 @@ for i in range(2,1001):
             is_prime = False
             break
 
+    # Check if last digit is 7 
+    string_num = str(i)
+    if string_num[-1] == "7":
+        is_prime = False
+
     # If is_prime == True: 
     if is_prime: 
         print(f"{i:>4}", end = " ")
